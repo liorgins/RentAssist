@@ -1,0 +1,9 @@
+<div class="sidebar" [ngClass]="{'open': isOpen}">
+    <div class="menu-button"></div>
+    <div class="menu">
+        <div class="menu-item" [routerLink]="['home']" [routerLinkActive]="'active'">Dashboard</div>
+        <div class="menu-item" [routerLink]="['assets']" [routerLinkActive]="'active'">Assets</div>
+        <div class="menu-item" [routerLink]="['statistics']" [routerLinkActive]="'active'">Statistics</div>
+        <div class="menu-item" [routerLink]="['documents']" [routerLinkActive]="'active'">Documents</div>
+    </div>
+</div>

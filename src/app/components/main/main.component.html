@@ -1,0 +1,12 @@
+<app-side-bar [isOpen]="isOpen" (itemClicked)="itemClicked($event)"></app-side-bar>
+
+<div class="app">
+  <div class="header">
+    <div class="menu-button" (click)="isOpen = !isOpen"></div>
+    <div class="title">{{title}}</div>
+  </div>
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+
